@@ -14,13 +14,13 @@ public class Main {
     public static void task1() {
         int moneyBox = 0;
         int deposit = 15000;
-        int monts = 0;
+        int months = 0;
         String msg = "Месяц %d, сумма накоплений равна %d рублей \n";
         while (moneyBox < 2_459_000) {
             moneyBox = moneyBox + moneyBox / 100;
             moneyBox = moneyBox + deposit;
-            monts++;
-            System.out.printf(msg, monts, moneyBox);
+            months++;
+            System.out.printf(msg, months, moneyBox);
         }
 
     }
@@ -54,29 +54,29 @@ public class Main {
     public static void task4() {
         double deposit = 15_000;
         int limit = 12_000_000;
-        int monts = 0;
+        int months = 0;
         double money = 0;
         String msg = "%d месяц, %.2f\n";
         while (money < limit) {
             money = money + money * 0.07;
             money = deposit + money;
-            monts++;
-            System.out.printf(msg, monts, money);
+            months++;
+            System.out.printf(msg, months, money);
         }
     }
 
     public static void task5() {
         double deposit = 15_000;
         int limit = 12_000_000;
-        int mouts = 0;
+        int months = 0;
         double money = 0;
         String msg = "%d месяц, %.2f\n";
         while (money < limit) {
             money = money + money * 0.07;
             money = deposit + money;
-            mouts++;
-            if (mouts % 6 == 0) {
-                System.out.printf(msg, mouts, money);
+            months++;
+            if (months % 6 == 0) {
+                System.out.printf(msg, months, money);
             }
         }
     }
@@ -85,15 +85,15 @@ public class Main {
         double deposit = 15_000;
         int ageLimit = 9;
         int mountsInTheEar = 12;
-        int monts = 0;
+        int months = 0;
         double money = 0;
         String msg = "%d месяц, %.2f\n";
-        while (monts < ageLimit * mountsInTheEar) {
+        while (months < ageLimit * mountsInTheEar) {
             money = money + money * 0.07;
             money = deposit + money;
-            monts++;
-            if (monts % 6 == 0) {
-                System.out.printf(msg, monts, money);
+            months++;
+            if (months % 6 == 0) {
+                System.out.printf(msg, months, money);
             }
         }
     }
